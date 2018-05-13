@@ -1,3 +1,3 @@
 exports.run = (client => {
-  console.log(`Reconnecting at ${new Date()}`);
+  console.log(`Attempting to reconnect at ${new Date()}`);
 });
