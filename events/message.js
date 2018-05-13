@@ -13,7 +13,7 @@ exports.run = ((client, message) => {
     commandFile.run(client, message, args);
 
   } catch (err) {
-    console.log(`Failed to load command: ${command}\n${error.stack}`);
+    console.log(`Failed to load command: ${command}\n${err.stack}`);
 
   }
 });
