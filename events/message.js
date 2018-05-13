@@ -9,7 +9,7 @@ exports.run = ((client, message) => {
   if (message.channel.type == 'dm') return;  
 
   try {
-    let commandFile = require(`./commands/${command}.js`);
+    let commandFile = require(`../commands/${command}.js`);
     commandFile.run(client, message, args);
 
   } catch (err) {
